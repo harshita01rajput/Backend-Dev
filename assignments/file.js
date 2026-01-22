@@ -15,11 +15,11 @@
  
 
 const fs = require("fs");
-
-const result = fs.readFileSync("./notes.txt", "utf-8");
+const path = require("path");
+const filePath = path.join(__dirname, "notes.txt");
+const result = fs.readFileSync(filePath, "utf-8");
 console.log(result);
 
-// trim() removes extra spaces and new lines
 let words = result.trim().split(" ");
 let count = words.length;
 
@@ -30,3 +30,4 @@ fs.writeFile("count.txt", "Word Count: " + count, function (error) {
     console.log("Word count in count.txt");
   }
 });
+

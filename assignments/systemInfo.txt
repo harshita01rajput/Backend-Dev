@@ -1,0 +1,6 @@
+Platform: darwin
+Architecture: arm64
+CPU Cores: 8
+Total Memory: 8589934592
+Free Memory: 100089856
+Hostname: Vanshs-MacBook-Air-2.local

@@ -42,10 +42,10 @@
 
 
  const fs = require("fs");
-// const proises = require("fs").promises;
+// const promises = require("fs").promises;
 
 // create file with synchronous method
-// fs.writeFileSync("./example.txt","this is sync file:welcome to gla");
+//  fs.writeFileSync("./example.txt","this is sync file:welcome to gla");
 
 // create file with asynchronous method
 // const r = fs.writeFile("./file.txt","this is async file: welcome to gla",(err)=>{});
@@ -68,13 +68,13 @@
 // fs.appendFileSync("./file.txt",`${Date.now()}hey harshita \n`);
 
 // copy file
-// fs.cpSync("./file.txt","./file_copy.txt");
+ fs.cpSync("./file.txt","./file_copy.txt");
 
 // delete file
-//  fs.unlinkSync("./file_copy.txt");
+  fs.unlinkSync("./file_copy.txt");
 
-// console.log(fs.statSync("./file.txt"));
-// console.log(fs.statSync("./file.txt").isFile());
+ console.log(fs.statSync("./file.txt"));
+ console.log(fs.statSync("./file.txt").isFile());
 
 // fs.mkdirSync("./new_folder/folder 2/folder 3" ,{recursive:true});
 
